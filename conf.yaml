@@ -1,0 +1,9 @@
+log:
+  name: pylog
+  filename: logs/pylog.log
+  debug: True
+testdata:
+  file: test_data/test_data.xlsx
+report:
+  filename: reports/测试报告.html
+  description: 一个练手项目

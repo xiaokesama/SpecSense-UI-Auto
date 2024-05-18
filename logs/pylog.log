@@ -1,0 +1,230 @@
+2024-04-01 21:15:02,865 INFO [pylog] [test_recharge.py (setUpClass:23] - 充值接口开始测试
+2024-04-01 21:15:04,915 INFO [pylog] [fixture.py (register:34] - 注册用户成功
+2024-04-01 21:15:04,915 INFO [pylog] [test_recharge.py (setUpClass:30] - 用户注册13901234567成功
+2024-04-01 21:15:06,963 INFO [pylog] [fixture.py (login:60] - 登录用户成功
+2024-04-01 21:15:06,963 INFO [pylog] [test_recharge.py (setUpClass:36] - 用户登录13901234567成功
+2024-04-01 21:15:06,964 INFO [pylog] [test_recharge.py (setUpClass:39] - 获取用户13901234567的token成功
+2024-04-01 21:15:06,965 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:15:09,009 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【充值成功】状态码断言成功：
+2024-04-01 21:15:09,009 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:15:09,010 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:15:09,010 INFO [pylog] [base_case.py (check_case:44] - 用例[充值成功]测试结束<<<<<<<<
+2024-04-01 21:15:09,011 INFO [pylog] [base_case.py (tearDownClass:27] - 充值接口接口测试结束
+2024-04-01 21:22:45,617 INFO [pylog] [base_case.py (setUpClass:23] - 投资业务流接口开始测试
+2024-04-01 21:22:45,618 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:22:45,620 ERROR [pylog] [base_case.py (step:75] - 用例[充值成功]发送http请求错误
+Traceback (most recent call last):
+  File "C:\Users\11932\PycharmProjects\po3\testcases\base_case.py", line 73, in step
+    self.response = send_http_request(url=self.case['url'], method=self.case['method'], **self.case['request'])
+  File "C:\Users\11932\PycharmProjects\po3\common\make_request.py", line 6, in send_http_request
+    return getattr(requests,method)(url,**kwargs)
+  File "E:\Python\Python39\lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "E:\Python\Python39\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "E:\Python\Python39\lib\site-packages\requests\sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+  File "E:\Python\Python39\lib\site-packages\requests\sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "E:\Python\Python39\lib\site-packages\requests\models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "E:\Python\Python39\lib\site-packages\requests\models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '/': No scheme supplied. Perhaps you meant http:///?
+2024-04-01 21:22:45,622 DEBUG [pylog] [base_case.py (step:76] - url:/,method:post,request:{}
+2024-04-01 21:22:45,932 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:22:45,932 ERROR [pylog] [base_case.py (step:75] - 用例[充值成功]发送http请求错误
+Traceback (most recent call last):
+  File "C:\Users\11932\PycharmProjects\po3\testcases\base_case.py", line 73, in step
+    self.response = send_http_request(url=self.case['url'], method=self.case['method'], **self.case['request'])
+  File "C:\Users\11932\PycharmProjects\po3\common\make_request.py", line 6, in send_http_request
+    return getattr(requests,method)(url,**kwargs)
+  File "E:\Python\Python39\lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "E:\Python\Python39\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "E:\Python\Python39\lib\site-packages\requests\sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+  File "E:\Python\Python39\lib\site-packages\requests\sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "E:\Python\Python39\lib\site-packages\requests\models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "E:\Python\Python39\lib\site-packages\requests\models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '/': No scheme supplied. Perhaps you meant http:///?
+2024-04-01 21:22:45,933 DEBUG [pylog] [base_case.py (step:76] - url:/,method:post,request:{'data': {'mobilephone': '#normal_mobile_phone#', 'amount': 888}}
+2024-04-01 21:22:45,977 INFO [pylog] [base_case.py (tearDownClass:27] - 投资业务流接口测试结束
+2024-04-01 21:23:11,434 INFO [pylog] [base_case.py (setUpClass:23] - 注册接口开始测试
+2024-04-01 21:23:11,435 INFO [pylog] [base_case.py (check_case:31] - 用例：注册成功-1开始测试
+2024-04-01 21:23:11,437 ERROR [pylog] [base_case.py (step:75] - 用例[注册成功-1]发送http请求错误
+Traceback (most recent call last):
+  File "C:\Users\11932\PycharmProjects\po3\testcases\base_case.py", line 73, in step
+    self.response = send_http_request(url=self.case['url'], method=self.case['method'], **self.case['request'])
+  File "C:\Users\11932\PycharmProjects\po3\common\make_request.py", line 6, in send_http_request
+    return getattr(requests,method)(url,**kwargs)
+  File "E:\Python\Python39\lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "E:\Python\Python39\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "E:\Python\Python39\lib\site-packages\requests\sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+  File "E:\Python\Python39\lib\site-packages\requests\sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "E:\Python\Python39\lib\site-packages\requests\models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "E:\Python\Python39\lib\site-packages\requests\models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '/': No scheme supplied. Perhaps you meant http:///?
+2024-04-01 21:23:11,439 DEBUG [pylog] [base_case.py (step:76] - url:/,method:post,request:{'data': {'mobilephone': '13401234567', 'pwd': '123456'}, 'headers': {'x-lemonban-Media_Type': 'lemonban.v2'}}
+2024-04-01 21:23:11,737 INFO [pylog] [base_case.py (tearDownClass:27] - 注册接口测试结束
+2024-04-01 21:25:03,013 INFO [pylog] [base_case.py (setUpClass:23] - 注册接口开始测试
+2024-04-01 21:25:03,014 INFO [pylog] [base_case.py (check_case:31] - 用例：注册成功-1开始测试
+2024-04-01 21:25:05,064 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【注册成功-1】状态码断言成功：
+2024-04-01 21:25:05,064 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:25:05,065 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:25:05,065 INFO [pylog] [base_case.py (check_case:44] - 用例[注册成功-1]测试结束<<<<<<<<
+2024-04-01 21:25:05,066 INFO [pylog] [base_case.py (tearDownClass:27] - 注册接口测试结束
+2024-04-01 21:25:13,821 INFO [pylog] [base_case.py (setUpClass:23] - 注册接口开始测试
+2024-04-01 21:25:13,822 INFO [pylog] [base_case.py (check_case:31] - 用例：注册成功-1开始测试
+2024-04-01 21:25:15,877 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【注册成功-1】状态码断言成功：
+2024-04-01 21:25:15,877 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:25:15,878 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:25:15,878 INFO [pylog] [base_case.py (check_case:44] - 用例[注册成功-1]测试结束<<<<<<<<
+2024-04-01 21:25:15,879 INFO [pylog] [base_case.py (tearDownClass:27] - 注册接口测试结束
+2024-04-01 21:25:27,632 INFO [pylog] [test_recharge.py (setUpClass:23] - 充值接口开始测试
+2024-04-01 21:25:29,681 INFO [pylog] [fixture.py (register:34] - 注册用户成功
+2024-04-01 21:25:29,681 INFO [pylog] [test_recharge.py (setUpClass:30] - 用户注册15701234567成功
+2024-04-01 21:25:31,728 INFO [pylog] [fixture.py (login:60] - 登录用户成功
+2024-04-01 21:25:31,728 INFO [pylog] [test_recharge.py (setUpClass:36] - 用户登录15701234567成功
+2024-04-01 21:25:31,728 INFO [pylog] [test_recharge.py (setUpClass:39] - 获取用户15701234567的token成功
+2024-04-01 21:25:31,729 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:25:33,775 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【充值成功】状态码断言成功：
+2024-04-01 21:25:33,776 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:25:33,777 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:25:33,777 INFO [pylog] [base_case.py (check_case:44] - 用例[充值成功]测试结束<<<<<<<<
+2024-04-01 21:25:33,778 INFO [pylog] [base_case.py (tearDownClass:27] - 充值接口接口测试结束
+2024-04-01 21:25:46,540 INFO [pylog] [test_audit.py (setUpClass:23] - 审核接口开始测试
+2024-04-01 21:25:48,585 INFO [pylog] [fixture.py (register:34] - 注册用户成功
+2024-04-01 21:25:48,585 INFO [pylog] [test_audit.py (setUpClass:31] - 注册用户19301234567成功
+2024-04-01 21:25:50,631 INFO [pylog] [fixture.py (login:60] - 登录用户成功
+2024-04-01 21:25:50,631 INFO [pylog] [test_audit.py (setUpClass:37] - 登录用户19301234567成功
+2024-04-01 21:25:52,680 INFO [pylog] [fixture.py (register:34] - 注册用户成功
+2024-04-01 21:25:52,680 INFO [pylog] [test_audit.py (setUpClass:48] - 注册管理员用户14501234567成功
+2024-04-01 21:25:54,726 INFO [pylog] [fixture.py (login:60] - 登录用户成功
+2024-04-01 21:25:56,774 INFO [pylog] [fixture.py (add_loan:95] - 创建项目成功
+2024-04-01 21:25:56,775 INFO [pylog] [test_audit.py (setUp:65] - 添加项目成功
+2024-04-01 21:25:56,775 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:25:58,820 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【充值成功】状态码断言成功：
+2024-04-01 21:25:58,821 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:25:58,821 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:25:58,821 INFO [pylog] [base_case.py (check_case:44] - 用例[充值成功]测试结束<<<<<<<<
+2024-04-01 21:26:00,870 INFO [pylog] [fixture.py (add_loan:95] - 创建项目成功
+2024-04-01 21:26:00,870 INFO [pylog] [test_audit.py (setUp:65] - 添加项目成功
+2024-04-01 21:26:00,870 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:26:02,918 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【充值成功】状态码断言成功：
+2024-04-01 21:26:02,918 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:26:02,919 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:26:02,920 INFO [pylog] [base_case.py (check_case:44] - 用例[充值成功]测试结束<<<<<<<<
+2024-04-01 21:26:02,922 INFO [pylog] [base_case.py (tearDownClass:27] - base用例接口测试结束
+2024-04-01 21:27:13,489 INFO [pylog] [base_case.py (setUpClass:23] - 投资业务流接口开始测试
+2024-04-01 21:27:13,490 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:27:15,534 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【充值成功】状态码断言成功：
+2024-04-01 21:27:15,534 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:27:15,534 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:27:15,807 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:27:17,852 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【充值成功】状态码断言成功：
+2024-04-01 21:27:17,853 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:27:17,853 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:27:17,854 INFO [pylog] [base_case.py (check_case:44] - 用例[充值成功]测试结束<<<<<<<<
+2024-04-01 21:27:17,855 INFO [pylog] [base_case.py (tearDownClass:27] - 投资业务流接口测试结束
+2024-04-01 21:28:31,591 INFO [pylog] [base_case.py (setUpClass:23] - 投资业务流接口开始测试
+2024-04-01 21:28:31,592 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:28:33,634 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【充值成功】状态码断言成功：
+2024-04-01 21:28:33,634 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:28:33,635 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:28:33,901 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:28:35,952 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【充值成功】状态码断言成功：
+2024-04-01 21:28:35,952 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:28:35,953 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:28:35,953 INFO [pylog] [base_case.py (check_case:44] - 用例[充值成功]测试结束<<<<<<<<
+2024-04-01 21:28:35,954 INFO [pylog] [base_case.py (tearDownClass:27] - 投资业务流接口测试结束
+2024-04-01 21:30:44,053 INFO [pylog] [base_case.py (setUpClass:23] - 投资业务流接口开始测试
+2024-04-01 21:30:44,054 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:30:46,096 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【充值成功】状态码断言成功：
+2024-04-01 21:30:46,096 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:30:46,097 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:30:46,362 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:30:48,414 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【充值成功】状态码断言成功：
+2024-04-01 21:30:48,414 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:30:48,414 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:30:48,415 INFO [pylog] [base_case.py (check_case:44] - 用例[充值成功]测试结束<<<<<<<<
+2024-04-01 21:30:48,416 INFO [pylog] [base_case.py (tearDownClass:27] - 投资业务流接口测试结束
+2024-04-01 21:34:55,649 INFO [pylog] [base_case.py (setUpClass:23] - 投资业务流接口开始测试
+2024-04-01 21:34:55,650 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:34:57,698 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【充值成功】状态码断言成功：
+2024-04-01 21:34:57,698 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:34:57,699 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:34:57,964 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:35:00,019 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【充值成功】状态码断言成功：
+2024-04-01 21:35:00,019 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:35:00,020 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:35:00,020 INFO [pylog] [base_case.py (check_case:44] - 用例[充值成功]测试结束<<<<<<<<
+2024-04-01 21:35:00,021 INFO [pylog] [base_case.py (tearDownClass:27] - 投资业务流接口测试结束
+2024-04-01 21:37:46,936 INFO [pylog] [base_case.py (setUpClass:23] - 投资业务流接口开始测试
+2024-04-01 21:37:46,937 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:37:48,985 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【充值成功】状态码断言成功：
+2024-04-01 21:37:48,985 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:37:48,986 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:37:49,254 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:37:51,304 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【充值成功】状态码断言成功：
+2024-04-01 21:37:51,304 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:37:51,305 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:37:51,305 INFO [pylog] [base_case.py (check_case:44] - 用例[充值成功]测试结束<<<<<<<<
+2024-04-01 21:37:51,306 INFO [pylog] [base_case.py (tearDownClass:27] - 投资业务流接口测试结束
+2024-04-01 21:39:38,103 INFO [pylog] [base_case.py (setUpClass:23] - 投资业务流接口开始测试
+2024-04-01 21:39:38,104 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:39:40,155 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【充值成功】状态码断言成功：
+2024-04-01 21:39:40,155 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:39:40,155 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:39:40,156 INFO [pylog] [base_case.py (check_case:44] - 用例[充值成功]测试结束<<<<<<<<
+2024-04-01 21:39:40,159 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:39:42,199 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【充值成功】状态码断言成功：
+2024-04-01 21:39:42,200 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:39:42,200 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:39:42,201 INFO [pylog] [base_case.py (check_case:44] - 用例[充值成功]测试结束<<<<<<<<
+2024-04-01 21:39:42,202 INFO [pylog] [base_case.py (tearDownClass:27] - 投资业务流接口测试结束
+2024-04-01 21:42:25,188 INFO [pylog] [base_case.py (setUpClass:23] - 投资业务流接口开始测试
+2024-04-01 21:42:25,189 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:42:27,234 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【充值成功】状态码断言成功：
+2024-04-01 21:42:27,234 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:42:27,235 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:42:27,235 INFO [pylog] [base_case.py (check_case:44] - 用例[充值成功]测试结束<<<<<<<<
+2024-04-01 21:42:27,238 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:42:29,278 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【充值成功】状态码断言成功：
+2024-04-01 21:42:29,279 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:42:29,279 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:42:29,279 INFO [pylog] [base_case.py (check_case:44] - 用例[充值成功]测试结束<<<<<<<<
+2024-04-01 21:42:29,281 INFO [pylog] [base_case.py (tearDownClass:27] - 投资业务流接口测试结束
+2024-04-01 21:44:43,524 INFO [pylog] [base_case.py (setUpClass:23] - 投资业务流接口开始测试
+2024-04-01 21:44:43,525 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:44:45,574 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【充值成功】状态码断言成功：
+2024-04-01 21:44:45,574 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:44:45,575 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:44:45,895 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:44:47,951 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【充值成功】状态码断言成功：
+2024-04-01 21:44:47,951 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:44:47,952 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:44:47,952 INFO [pylog] [base_case.py (check_case:44] - 用例[充值成功]测试结束<<<<<<<<
+2024-04-01 21:44:47,953 INFO [pylog] [base_case.py (tearDownClass:27] - 投资业务流接口测试结束
+2024-04-01 21:48:09,460 INFO [pylog] [base_case.py (setUpClass:23] - 投资业务流接口开始测试
+2024-04-01 21:48:09,461 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:48:11,510 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【充值成功】状态码断言成功：
+2024-04-01 21:48:11,510 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:48:11,511 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:48:11,512 INFO [pylog] [base_case.py (check_case:44] - 用例[充值成功]测试结束<<<<<<<<
+2024-04-01 21:48:11,514 INFO [pylog] [base_case.py (check_case:31] - 用例：充值成功开始测试
+2024-04-01 21:48:13,558 INFO [pylog] [base_case.py (assert_status_code:87] - 用例【充值成功】状态码断言成功：
+2024-04-01 21:48:13,558 INFO [pylog] [base_case.py (assert_json_response:104] - 请求结果断言成功
+2024-04-01 21:48:13,558 INFO [pylog] [base_case.py (assert_db_true:117] - 数据库断言成功
+2024-04-01 21:48:13,559 INFO [pylog] [base_case.py (check_case:44] - 用例[充值成功]测试结束<<<<<<<<
+2024-04-01 21:48:13,560 INFO [pylog] [base_case.py (tearDownClass:27] - 投资业务流接口测试结束
